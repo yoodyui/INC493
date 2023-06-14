@@ -8,7 +8,7 @@ This is a ROS2 implementation of the ROS1 driver using the new serial driver loc
 
 ## How to test
 
-1. Clone this repository by git clone -b humble https://github.com/yoodyui/INC493.git into `src`.
+1. Clone this repository by 'git clone -b humble https://github.com/yoodyui/INC493.git' into `src`.
 2. `rosdep update && rosdep install --from-paths src -i -y`
 3. Plug in the VESC with a USB cable.
 4. Modify `vesc/vesc_driver/src/vesc_driver.cpp` to reflect any changes on BP's comments.
