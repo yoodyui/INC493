@@ -15,3 +15,5 @@ This is a ROS2 implementation of the ROS1 driver using the new serial driver loc
 5. Build the packages `colcon build`
 6. `ros2 launch vesc_driver vesc_driver_node.launch.py`
 7. If prompted "permission denied" on the serial port: `sudo chmod 777 /dev/ttyACM0`
+8. `ros2 topic echo motor_speed` to see the command to BLDC
+9. `ros2 topic echo servo_angle` to see the command to servo motor
