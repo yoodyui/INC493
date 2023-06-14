@@ -10,7 +10,7 @@ Packages to interface with Veddar VESC motor controllers. See https://vesc-proje
 2. `rosdep install -i --from-path src --rosdistro humble -y`
 3. Plug in the VESC with a USB cable.
 4. Modify `vesc/vesc_driver/src/vesc_driver.cpp` to reflect any changes on BP's comments.
-5. Build the packages `colcon build`
+5. Build the packages `colcon build` or `colcon build --packages-select vesc_driver`
 6. `ros2 launch vesc_driver vesc_driver_node.launch.py`
 7. If prompted "permission denied" on the serial port: `sudo chmod 777 /dev/ttyACM0`
 8. `ros2 topic echo motor_speed` to see the command to BLDC
